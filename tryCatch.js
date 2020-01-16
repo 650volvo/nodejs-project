@@ -12,3 +12,5 @@ finally {
 
 var foo = require('./foo.js');
 foo();
+
+var jade = {"id_sofe":4};
