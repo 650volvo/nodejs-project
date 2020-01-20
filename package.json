@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tedious": "^6.6.2"
+    "moment": "^2.24.0",
+    "optimist": "^0.6.1",
+    "tedious": "^6.6.2",
+    "underscore": "^1.9.2"
   }
 }

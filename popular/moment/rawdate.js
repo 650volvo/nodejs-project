@@ -1,0 +1,22 @@
+var now = new Date();
+//console.log('now is',now);
+
+var seconds = now.getSeconds();
+//console.log('seconds',seconds);
+var month = now.getMonth();
+//console.log('getmonth',month);
+var newDate =new Date(2014, 0, 1);
+var modDate = newDate.toString();
+//console.log('1 jan 2014:', modDate);
+var moment = require('moment');
+var wrapped = moment(new Date());
+//console.log(wrapped.toDate());
+//console.log(moment("2010-10-20 4:30", "YYYY-MM-DD HH:mm").toDate());
+var date = new Date();
+var jsonDate = date.toJSON();
+var backtoDate = new Date(jsonDate);
+//console.log(typeof(jsonDate));
+var foo = {};
+var bar = { 'foo': foo };
+foo.toJSON = function () {return "custom"};
+console.log(JSON.stringify(bar));
