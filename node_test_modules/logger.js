@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 // this is added so I can see if pulling will this disappear
+=======
+>>>>>>> Stashed changes
 
 const util = require('util');
 
@@ -16,13 +19,21 @@ Logger.prototype.log = function(message) {
 };
 
 Logger.prototype.info = function(message) {
+<<<<<<< Updated upstream
     this.log('info: ' + message);
+=======
+    this.log('info: ' + message); 
+>>>>>>> Stashed changes
 };
 
 Logger.prototype.verbose = function(message) { 
     this.log('verbose: ' + message);
 }; 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 module.exports = Logger;
 
 var Logger = require('./logger');
@@ -32,4 +43,10 @@ dbLogger.info('This is an informational message');
 var accessLogger = new Logger('ACCESS');
 accessLogger.verbose('This is a verbose message');
 
+<<<<<<< Updated upstream
 accessLogger.info('ssss')
+=======
+accessLogger.info('ssss')
+
+
+>>>>>>> Stashed changes
