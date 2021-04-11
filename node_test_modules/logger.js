@@ -1,3 +1,4 @@
+// this is added so I can see if pulling will this disappear
 
 const util = require('util');
 
@@ -15,13 +16,12 @@ Logger.prototype.log = function(message) {
 };
 
 Logger.prototype.info = function(message) {
-    this.log('info: ' + message); 
+    this.log('info: ' + message);
 };
 
 Logger.prototype.verbose = function(message) { 
     this.log('verbose: ' + message);
 }; 
-
 
 module.exports = Logger;
 
@@ -33,5 +33,3 @@ var accessLogger = new Logger('ACCESS');
 accessLogger.verbose('This is a verbose message');
 
 accessLogger.info('ssss')
-
-
